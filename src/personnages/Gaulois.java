@@ -44,5 +44,6 @@ public class Gaulois {
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("asterix", 8);
 		System.out.println(asterix);
+		System.out.println(asterix.prendreParole());
 	}
 }
