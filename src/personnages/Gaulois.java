@@ -24,7 +24,7 @@ public class Gaulois {
 	}
 
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "« " + texte + "»");
+		System.out.println(prendreParole() + "« " + texte + " »");
 	}
 
 	private String prendreParole() {
@@ -42,8 +42,8 @@ public class Gaulois {
 	}
 
 	public static void main(String[] args) {
-		Gaulois asterix = new Gaulois("asterix", 8);
+		Gaulois asterix = new Gaulois("Asterix", 8);
 		System.out.println(asterix);
-		System.out.println(asterix.prendreParole());
+		asterix.parler("Par Toutatis !");
 	}
 }
