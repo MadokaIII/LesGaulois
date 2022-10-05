@@ -20,6 +20,10 @@ public class Druide {
 		return nom;
 	}
 
+	public void setForcePotion(int forcePotion) {
+		this.forcePotion = forcePotion;
+	}
+
 	public void parler(String texte) {
 		System.out.println(prendreParole() + "« " + texte + "»");
 	}
@@ -30,18 +34,23 @@ public class Druide {
 	
 	public void preparerPotion() {
 		Random rand = new Random();
-		int forcePotion = rand.nextInt(effetPotionMin,effetPotionMax);
+		this.setForcePotion(rand.nextInt(effetPotionMin,effetPotionMax));
 		if (forcePotion >= 7) {
-			System.out.println("J'ai préparé une super potion de force " + forcePotion);
+			this.parler("J'ai préparé une super potion de force " + forcePotion);
 		}
 		else {
-			System.out.println("Je n'ai pas trouvé tous les ingrédients, ma potion est seulement de force" + forcePotion);
+			this.parler("Je n'ai pas trouvé tous les ingrédients, ma potion est seulement de force " + forcePotion);
 		}
 	}
-
-	public static void main(String[] args) {
-		Druide panoramix = new Druide("Panoramix", 6, 10);
-		panoramix.preparerPotion();
+	
+	public void booster(Gaulois gaulois) {
+		if (gaulois.getNom() == "Obélix") {
+			this.parler("Non, Obélix !... Tu n’auras pas de potion magique ");
+		}
+		else {
+			this.preparerPotion();
+			gaulois.boirePotion(forcePotion);
+		}
 	}
 	
 }

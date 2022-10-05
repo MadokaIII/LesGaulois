@@ -41,8 +41,8 @@ public class Village {
 		Chef abraracourcix = new Chef("Abraracourcix", 6, village);
 		Gaulois asterix = new Gaulois("Astérix", 8);
 		village.ajouterHabitant(asterix);
-		//Gaulois gaulois = village.trouverHabitant(1);
-	    //System.out.println(gaulois);
+		Druide panoramix = new Druide("Panoramix", 5, 10);
+		panoramix.booster(asterix);
 		village.afficherVillageois();
 	}
 	
