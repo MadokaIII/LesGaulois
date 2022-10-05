@@ -10,6 +10,10 @@ public class Gaulois {
 		this.nom = nom;
 		this.force = force;
 	}
+	
+	public String getNom(){
+		return nom;
+	}
 
 	public int getForce() {
 		return force;

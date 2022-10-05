@@ -1,13 +1,21 @@
 package histoire;
 
-import personnages;
+import personnages.Gaulois;
+import personnages.Romain;
+import personnages.Druide;
 
 public class Scenario {
 
 	public static void main(String[] args) {
-		Gaulois asterix = new Gaulois("Asterix", 8);
+		
+		/*Gaulois asterix = new Gaulois("Asterix", 8);
 		Romain minus = new Romain("Minus", 5);
-		asterix.parler("Par Toutatis !");
+		asterix.parler("Bonjour à tous !");
+		minus.parler("UN GAU... UN GAUGAU...");
+		asterix.frapper(minus);
+		asterix.frapper(minus);
+		asterix.frapper(minus);*/
+		
 	}
 
 }
