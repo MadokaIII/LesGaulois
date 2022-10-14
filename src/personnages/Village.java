@@ -43,6 +43,8 @@ public class Village {
 		village.ajouterHabitant(asterix);
 		Druide panoramix = new Druide("Panoramix", 5, 10);
 		panoramix.booster(asterix);
+		Gaulois obelix = new Gaulois("Obélix", 25);
+		village.ajouterHabitant(obelix);
 		village.afficherVillageois();
 	}
 	
