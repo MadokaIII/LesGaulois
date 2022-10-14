@@ -36,10 +36,10 @@ public class Druide {
 		Random rand = new Random();
 		this.setForcePotion(rand.nextInt(effetPotionMin,effetPotionMax));
 		if (forcePotion >= 7) {
-			this.parler("J'ai préparé une super potion de force " + forcePotion);
+			this.parler("J'ai préparé une super potion de force " + forcePotion + " ");
 		}
 		else {
-			this.parler("Je n'ai pas trouvé tous les ingrédients, ma potion est seulement de force " + forcePotion);
+			this.parler("Je n'ai pas trouvé tous les ingrédients, ma potion est seulement de force " + forcePotion + " ");
 		}
 	}
 	
