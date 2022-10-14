@@ -33,6 +33,6 @@ public class Romain {
 		else {
 			parler("J'abandonne...");
 		}
-		assert var > force || force < 0;
+		assert var > force;
 	}
 }
