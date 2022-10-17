@@ -10,8 +10,8 @@ public class Gaulois {
 		this.nom = nom;
 		this.force = force;
 	}
-	
-	public String getNom(){
+
+	public String getNom() {
 		return nom;
 	}
 
@@ -22,7 +22,7 @@ public class Gaulois {
 	public void setForce(int force) {
 		this.force = force;
 	}
-	
+
 	public void setEffetPotion(int effetPotion) {
 		this.effetPotion = effetPotion;
 	}
@@ -43,7 +43,7 @@ public class Gaulois {
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
 		romain.recevoirCoup(force / 3 * effetPotion);
 	}
-	
+
 	public void boirePotion(int forcePotion) {
 		setEffetPotion(forcePotion);
 		this.parler("Merci Druide, je sens que ma force est " + forcePotion + " fois décuplée");
@@ -53,5 +53,5 @@ public class Gaulois {
 	public String toString() {
 		return "Gaulois [nom = " + nom + ", force = " + force + ", effetPotion = " + effetPotion + "]";
 	}
-	
+
 }
