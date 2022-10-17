@@ -6,6 +6,7 @@ public class Romain {
 	private int force;
 	private Equipement[] equipement = new Equipement[2];
 	private int nbEquipement = 0;
+    private String texte;
 
 	public Romain(String nom, int force) {
 		assert force >= 0;
@@ -47,7 +48,7 @@ public class Romain {
 
 		case 1:
 			if (this.equipement[0] == equipement) {
-				System.out.println("Le soldat " + nom + " possède déjà " + equipement + "!");
+				System.out.println("Le soldat " + nom + " possède déjà " + equipement + " !");
 			} 
 			else {
 				System.out.println("Le soldat Minus s’équipe avec un " + equipement + " !");
@@ -62,5 +63,7 @@ public class Romain {
 		}
 
 	}
+	
+	
 
 }
