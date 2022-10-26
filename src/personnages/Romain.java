@@ -25,7 +25,7 @@ public class Romain {
 	private String prendreParole() {
 		return "Le romain " + nom + " : ";
 	}
-//
+
 //	public void recevoirCoup(int forceCoup) {
 //		assert force > 0;
 //		int var = force;

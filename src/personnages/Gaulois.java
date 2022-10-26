@@ -37,10 +37,6 @@ public class Gaulois {
 		System.out.println(prendreParole() + "« " + texte + " »");
 	}
 
-//	private String prendreParole() {
-//		return "Le gaulois " + nom + " : ";
-//	}
-
 //	public void frapper(Romain romain) {
 //		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
 //		romain.recevoirCoup(force / 3 * effetPotion);
@@ -67,5 +63,19 @@ public class Gaulois {
 			trophees[nbTrophees] = nouveauTrophees[i];
 		}
 	}
+	
+	public void faireUneDonnation(Musee musee) {
+        if (nbTrophees == 0) {
+            System.out.println(this.nom + "n'a pas d'équipement à donner ");
+        } else {
+            System.out.println("Le gaulois " + this.nom +" : « Je donne au musee tous mes trophees :");
+            while(nbTrophees > 0) {
+                System.out.println("  - " + trophees[nbTrophees - 1].getNom());
+                Trophee trophee = new Trophee(this, trophees[nbTrophees - 1]);
+                musee.donnerTrophees(this, trophee);
+                nbTrophees--;
+            }
+        }
+    }
 
 }
