@@ -22,9 +22,9 @@ public class Romain {
 		System.out.println(prendreParole() + "« " + texte + "»");
 	}
 
-//	private String prendreParole() {
-//		return "Le romain " + nom + " : ";
-//	}
+	private String prendreParole() {
+		return "Le romain " + nom + " : ";
+	}
 //
 //	public void recevoirCoup(int forceCoup) {
 //		assert force > 0;
