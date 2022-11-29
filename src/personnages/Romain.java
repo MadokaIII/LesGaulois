@@ -123,6 +123,7 @@ public class Romain {
 				equipements[i] = null;
 			}
 		}
+		nbEquipement = 0;
 		return equipementEjecte;
 	}
 

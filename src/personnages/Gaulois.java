@@ -69,7 +69,7 @@ public class Gaulois {
             System.out.println(this.nom + "n'a pas d'équipement à donner ");
         } else {
             System.out.println("Le gaulois " + this.nom +" : « Je donne au musee tous mes trophees :");
-            while(nbTrophees > 0) {
+            for(; nbTrophees > 0; nbTrophees--) {
                 System.out.println("  - " + trophees[nbTrophees - 1].getNom());
                 Trophee trophee = new Trophee(this, trophees[nbTrophees - 1]);
                 musee.donnerTrophees(this, trophee);
